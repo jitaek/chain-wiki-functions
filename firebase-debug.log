@@ -1,0 +1,227 @@
+[debug] [2018-01-17T04:59:26.868Z] ----------------------------------------------------------------------
+[debug] [2018-01-17T04:59:26.870Z] Command:       /Users/jitae/.nvm/versions/node/v8.6.0/bin/node /Users/jitae/.nvm/versions/node/v8.6.0/bin/firebase deploy --only functions
+[debug] [2018-01-17T04:59:26.871Z] CLI Version:   3.16.0
+[debug] [2018-01-17T04:59:26.871Z] Platform:      darwin
+[debug] [2018-01-17T04:59:26.871Z] Node Version:  v8.6.0
+[debug] [2018-01-17T04:59:26.871Z] Time:          Tue Jan 16 2018 20:59:26 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:26.871Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-17T04:59:26.887Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-17T04:59:26.887Z] > authorizing via signed-in user
+[debug] [2018-01-17T04:59:26.889Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/chainchronicle-ea233  
+  
+ Tue Jan 16 2018 20:59:26 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:27.398Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:27.399Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/chainchronicle-ea233/tokens  
+  
+ Tue Jan 16 2018 20:59:27 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:27.778Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'chainchronicle-ea233'...
+[info] 
+[info] i  deploying functions
+[debug] [2018-01-17T04:59:28.237Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "^5.5.1",
+    "firebase-functions": "^0.7.5"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-01-17T04:59:28.238Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/chainchronicle-ea233?view=CONSUMER_VIEW  
+  
+ Tue Jan 16 2018 20:59:28 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:28.238Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/chainchronicle-ea233?view=CONSUMER_VIEW  
+  
+ Tue Jan 16 2018 20:59:28 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:28.982Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2018-01-17T04:59:28.989Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:28.990Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/chainchronicle-ea233  
+  
+ Tue Jan 16 2018 20:59:28 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:28.990Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/chainchronicle-ea233/apiKeys  
+  
+ Tue Jan 16 2018 20:59:28 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:29.495Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:29.552Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-01-17T04:59:34.786Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/chainchronicle-ea233/configs  
+  
+ Tue Jan 16 2018 20:59:34 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.081Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:35.336Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.912Z] <<< HTTP RESPONSE 200
+[info] i  functions: deleting function createUser...
+[info] i  functions: deleting function deleteUser...
+[info] i  functions: deleting function editArcana...
+[info] i  functions: deleting function migrateArcana...
+[info] i  functions: deleting function removeArcanaName...
+[info] i  functions: deleting function updateAbilityRefOnCreate...
+[info] i  functions: deleting function updateAbilityRefOnUpdate...
+[info] i  functions: deleting function updateAbilityWithBuddyOnCreate...
+[info] i  functions: deleting function updateAbilityWithBuddyOnUpdate...
+[info] i  functions: deleting function updateArcanaNameOnNameKRCreate...
+[info] i  functions: deleting function updateArcanaNameOnNameKRUpdate...
+[info] i  functions: deleting function updateArcanaNameOnNicknameKRCreate...
+[info] i  functions: deleting function updateArcanaNameOnNicknameKRUpdate...
+[info] i  functions: deleting function updateBuddyList...
+[info] i  functions: deleting function updateKizunaRefOnCreate...
+[info] i  functions: deleting function updateKizunaRefOnUpdate...
+[info] i  functions: deleting function updateLegendListOnCreate...
+[info] i  functions: deleting function updateLegendListOnUpdate...
+[debug] [2018-01-17T04:59:35.921Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/createUser  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.921Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/deleteUser  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.921Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/editArcana  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.922Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/migrateArcana  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.922Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/removeArcanaName  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.922Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateAbilityRefOnCreate  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.922Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateAbilityRefOnUpdate  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.922Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateAbilityWithBuddyOnCreate  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.923Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateAbilityWithBuddyOnUpdate  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.923Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateArcanaNameOnNameKRCreate  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.923Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateArcanaNameOnNameKRUpdate  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.923Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateArcanaNameOnNicknameKRCreate  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.924Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateArcanaNameOnNicknameKRUpdate  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.924Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateBuddyList  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.926Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateKizunaRefOnCreate  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.927Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateKizunaRefOnUpdate  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.927Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateLegendListOnCreate  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:35.927Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/chainchronicle-ea233/locations/us-central1/functions/updateLegendListOnUpdate  
+  
+ Tue Jan 16 2018 20:59:35 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.327Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.329Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.329Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.334Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.334Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.335Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.374Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.375Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.383Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.397Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.405Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.420Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.457Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.458Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.480Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.481Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.578Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.578Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.582Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvY3JlYXRlVXNlci9hd1RwU09YNmlTUQ  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.582Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvZGVsZXRlVXNlci9iWmhhQ1RxelZQdw  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.582Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvZWRpdEFyY2FuYS9LbDdiWV9SemFQTQ  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.583Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvbWlncmF0ZUFyY2FuYS9LLWNXRHhBQ1EzQQ  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.583Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvcmVtb3ZlQXJjYW5hTmFtZS9jay0zN3NNbFVxTQ  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.583Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlQWJpbGl0eVJlZk9uQ3JlYXRlLzBJTkhsMXAyWE1z  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.583Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlQWJpbGl0eVJlZk9uVXBkYXRlL0hWMkJBWXprYkJr  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.584Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlQWJpbGl0eVdpdGhCdWRkeU9uQ3JlYXRlL09QT3YwVHNFaWcw  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.584Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlQWJpbGl0eVdpdGhCdWRkeU9uVXBkYXRlL2REM1hQb3F0Mzlz  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.584Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlQXJjYW5hTmFtZU9uTmFtZUtSQ3JlYXRlL3dINWNUQWxTNWxR  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.584Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlQXJjYW5hTmFtZU9uTmFtZUtSVXBkYXRlL3R2VWxuSDVZVjNj  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.584Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlQXJjYW5hTmFtZU9uTmlja25hbWVLUkNyZWF0ZS9jWHNUN1lfWjJmRQ  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.585Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlQXJjYW5hTmFtZU9uTmlja25hbWVLUlVwZGF0ZS9jY2JJSUJKZ0lIZw  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.585Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlQnVkZHlMaXN0L09XLWNJT3l0WnY0  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.585Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlS2l6dW5hUmVmT25DcmVhdGUvQ1dyNTZyOEI2RGM  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.585Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlS2l6dW5hUmVmT25VcGRhdGUvWk5PNndqSVMybUU  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.585Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlTGVnZW5kTGlzdE9uQ3JlYXRlL2dhYnBuUUc1NFRR  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.586Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/Y2hhaW5jaHJvbmljbGUtZWEyMzMvdXMtY2VudHJhbDEvdXBkYXRlTGVnZW5kTGlzdE9uVXBkYXRlL1YyajZfUFF1SUpF  
+  
+ Tue Jan 16 2018 20:59:36 GMT-0800 (PST)
+[debug] [2018-01-17T04:59:36.940Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:36.941Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.041Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.051Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.077Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.081Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.084Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.085Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.093Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.094Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.094Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.095Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.097Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.099Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.100Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.102Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.103Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-17T04:59:37.103Z] <<< HTTP RESPONSE 200
